@@ -1,0 +1,15 @@
+{
+  "id": "my-genagent",
+  "name": "MyGenAgent",
+  "version": "v1.0.0",
+  "icon": "🧠",
+  "role": "Tutor Agent",
+  "description": "Example GenAgent with backend + UI",
+  "entry": {
+    "docker_image": "my-genagent:local",  
+    "port": 8080
+  },
+  "healthcheck": { "path": "/healthz", "timeoutSec": 10 },
+  "api": { "invoke_path": "/invoke" },
+  "ui": { "path": "/ui" }
+}
